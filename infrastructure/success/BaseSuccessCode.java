@@ -1,4 +1,4 @@
-package org.urbestfriend.global.infrastructure.success;
+package org.bf.userservice.global.infrastructure.success;
 
 import org.springframework.http.HttpStatus;
 

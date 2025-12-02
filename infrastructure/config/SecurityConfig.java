@@ -1,8 +1,8 @@
-package org.urbestfriend.global.infrastructure.config;
+package org.bf.userservice.global.infrastructure.config;
 
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
-import org.pokeherb.deliveryservice.global.security.LoginFilter;
+import org.bf.userservice.global.security.LoginFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;

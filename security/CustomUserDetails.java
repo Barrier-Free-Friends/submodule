@@ -1,4 +1,4 @@
-package org.urbestfriend.global.security;
+package org.bf.userservice.global.security;
 
 import lombok.Builder;
 import lombok.Getter;

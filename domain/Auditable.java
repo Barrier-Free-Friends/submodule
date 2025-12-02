@@ -1,4 +1,4 @@
-package org.urbestfriend.global.domain;
+package org.bf.userservice.global.domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;

@@ -1,7 +1,7 @@
-package org.urbestfriend.global.infrastructure.exception;
+package org.bf.userservice.global.infrastructure.exception;
 
 import lombok.Getter;
-import org.pokeherb.deliveryservice.global.infrastructure.error.BaseErrorCode;
+import org.bf.userservice.global.infrastructure.error.BaseErrorCode;
 
 @Getter
 public class CustomException extends RuntimeException{

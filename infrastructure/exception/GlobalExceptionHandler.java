@@ -1,9 +1,9 @@
-package org.urbestfriend.global.infrastructure.exception;
+package org.bf.userservice.global.infrastructure.exception;
 
 import lombok.extern.slf4j.Slf4j;
-import org.pokeherb.deliveryservice.global.infrastructure.CustomResponse;
-import org.pokeherb.deliveryservice.global.infrastructure.error.BaseErrorCode;
-import org.pokeherb.deliveryservice.global.infrastructure.error.GeneralErrorCode;
+import org.bf.userservice.global.infrastructure.CustomResponse;
+import org.bf.userservice.global.infrastructure.error.BaseErrorCode;
+import org.bf.userservice.global.infrastructure.error.GeneralErrorCode;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;

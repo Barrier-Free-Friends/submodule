@@ -1,4 +1,4 @@
-package org.urbestfriend.global.infrastructure.config;
+package org.bf.userservice.global.infrastructure.config;
 
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import jakarta.persistence.EntityManager;

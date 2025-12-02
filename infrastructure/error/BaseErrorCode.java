@@ -1,4 +1,4 @@
-package org.urbestfriend.global.infrastructure.error;
+package org.bf.userservice.global.infrastructure.error;
 
 import org.springframework.http.HttpStatus;
 

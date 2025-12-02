@@ -1,4 +1,4 @@
-package org.urbestfriend.global.infrastructure.error;
+package org.bf.userservice.global.infrastructure.error;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

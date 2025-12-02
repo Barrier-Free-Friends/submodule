@@ -1,4 +1,6 @@
-package org.urbestfriend.global.security;
+package org.bf.userservice.global.security;
+
+import java.util.UUID;
 
 /**
  * SecurityContextHolder 정보 확인을 위한 util service 제공
@@ -10,4 +12,6 @@ public interface SecurityUtils {
     boolean isPermitted(String role);
     // 현재 로그인한 사용자의 username 반환
     String getCurrentUsername();
+    // 현재 로그인한 사용자의 userId 반환
+    UUID getCurrentUserId();
 }
