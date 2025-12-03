@@ -1,4 +1,4 @@
-package org.bf.userservice.global.infrastructure.config;
+package org.bf.global.infrastructure.config;
 
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import jakarta.persistence.EntityManager;

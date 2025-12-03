@@ -1,7 +1,7 @@
-package org.bf.userservice.global.infrastructure.exception;
+package org.bf.global.infrastructure.exception;
 
 import lombok.Getter;
-import org.bf.userservice.global.infrastructure.error.BaseErrorCode;
+import org.bf.global.infrastructure.error.BaseErrorCode;
 
 @Getter
 public class CustomException extends RuntimeException{

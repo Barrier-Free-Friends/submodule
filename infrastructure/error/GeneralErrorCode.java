@@ -1,4 +1,4 @@
-package org.bf.userservice.global.infrastructure.error;
+package org.bf.global.infrastructure.error;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

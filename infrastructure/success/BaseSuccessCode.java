@@ -1,4 +1,4 @@
-package org.bf.userservice.global.infrastructure.success;
+package org.bf.global.infrastructure.success;
 
 import org.springframework.http.HttpStatus;
 

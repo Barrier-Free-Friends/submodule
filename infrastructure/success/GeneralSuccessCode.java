@@ -1,8 +1,7 @@
-package org.bf.userservice.global.infrastructure.success;
+package org.bf.global.infrastructure.success;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import org.bf.userservice.global.infrastructure.success.BaseSuccessCode;
 import org.springframework.http.HttpStatus;
 
 @Getter

@@ -1,4 +1,4 @@
-package org.bf.userservice.global.security;
+package org.bf.global.security;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

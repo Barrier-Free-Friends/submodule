@@ -1,4 +1,4 @@
-package org.bf.userservice.global.infrastructure;
+package org.bf.global.infrastructure;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -6,8 +6,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import org.bf.userservice.global.infrastructure.error.BaseErrorCode;
-import org.bf.userservice.global.infrastructure.success.BaseSuccessCode;
+import org.bf.global.infrastructure.error.BaseErrorCode;
+import org.bf.global.infrastructure.success.BaseSuccessCode;
 import org.springframework.http.HttpStatus;
 
 @Builder
