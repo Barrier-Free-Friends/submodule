@@ -19,6 +19,6 @@ public class ReportDeletedEvent extends AbstractDomainEvent {
 
     @Override
     public String getTopicName() {
-        return "report-events";
+        return "report-deleted-events";
     }
 }

@@ -20,6 +20,6 @@ public class ReportCreatedEvent extends AbstractDomainEvent {
 
     @Override
     public String getTopicName() {
-        return "report-events";
+        return "report-created-events";
     }
 }
