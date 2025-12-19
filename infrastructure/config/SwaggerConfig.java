@@ -8,10 +8,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ConditionalOnMissingBean
 public class SwaggerConfig {
 
     @Bean
+    @ConditionalOnMissingBean(GroupedOpenApi.class)
     public GroupedOpenApi publicApi(){
         return GroupedOpenApi.builder()
                 .group("springshop-public")
@@ -20,6 +20,7 @@ public class SwaggerConfig {
     }
 
     @Bean
+    @ConditionalOnMissingBean(OpenAPI.class)
     public OpenAPI customOpenAPI(){
         return new OpenAPI()
                 .info(new Info()
