@@ -7,6 +7,7 @@ import io.swagger.v3.oas.models.security.SecurityRequirement;
 import io.swagger.v3.oas.models.security.SecurityScheme;
 import io.swagger.v3.oas.models.servers.Server;
 import org.springdoc.core.models.GroupedOpenApi;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -14,6 +15,7 @@ import org.springframework.context.annotation.Configuration;
 public class SwaggerConfig {
 
     @Bean
+    @ConditionalOnMissingBean(GroupedOpenApi.class)
     public GroupedOpenApi publicApi(){
         return GroupedOpenApi.builder()
                 .group("springshop-public")
@@ -22,6 +24,7 @@ public class SwaggerConfig {
     }
 
     @Bean
+    @ConditionalOnMissingBean(OpenAPI.class)
     public OpenAPI customOpenAPI(){
 
         Info info = new io.swagger.v3.oas.models.info.Info()

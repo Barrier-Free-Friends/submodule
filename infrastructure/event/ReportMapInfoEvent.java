@@ -6,20 +6,20 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.bf.global.domain.event.AbstractDomainEvent;
 
+import java.util.List;
 import java.util.UUID;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ReportCreatedEvent extends AbstractDomainEvent {
+public class ReportMapInfoEvent extends AbstractDomainEvent {
     private UUID userId;
-    private int point;
+    private String tagCode;
+    private List<ReportMapImageInfo> images;
     private UUID sourceId;
     private String sourceTable;
 
     @Override
-    public String getTopicName() {
-        return "report-created-events";
-    }
+    public String getTopicName() { return "map-events"; }
 }
