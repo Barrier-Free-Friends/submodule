@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.bf.global.infrastructure.CustomResponse;
 import org.bf.global.infrastructure.error.BaseErrorCode;
 import org.bf.global.infrastructure.error.GeneralErrorCode;
+import org.bf.reportservice.infrastructure.exception.QueueFullException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -51,6 +52,19 @@ public class GlobalExceptionHandler {
                 .build();
 
         return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+    }
+
+    // 처리율 초과(큐 포화) 예외 처리
+    @ExceptionHandler(QueueFullException.class)
+    public ResponseEntity<CustomResponse<?>> handle(QueueFullException e) {
+        CustomResponse<?> response = CustomResponse.builder()
+                .isSuccess(false)
+                .status(HttpStatus.TOO_MANY_REQUESTS)
+                .code("TOO_MANY_REQUESTS")
+                .message(e.getMessage())
+                .build();
+
+        return new ResponseEntity<>(response, HttpStatus.TOO_MANY_REQUESTS);
     }
 }
 
