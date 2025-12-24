@@ -20,6 +20,7 @@ public class SwaggerConfig {
     }
 
     @Bean
+    @ConditionalOnMissingBean(OpenAPI.class)
     public OpenAPI customOpenAPI(){
         return new OpenAPI()
                 .info(new Info()
